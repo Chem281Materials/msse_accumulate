@@ -30,7 +30,7 @@ Your `accumulate` function must do this twice: the first time, by adding the vec
 **Print both sums, as well as the difference between the two sums.**
 
 The template function's type `T` indicates what type should be used to represent the intermediate values of the sum as it is being computed.
-When the type is `int` or `long`, you will need to perform conversions similar to that described in the Background information.
+When the type is `int` or `long`, you will need to perform conversions similar to the conversion described in the Background section.
 Try to maximize the precision of your `int`/`long` representation.
 This means multiplying by a very large value, but also avoiding any integer overflows (you'll want to use [std::numeric_limits](https://en.cppreference.com/w/cpp/types/numeric_limits) to help with this).
 Regardless of the type of `T`, convert your sum to a `double` after all the values have been added.
