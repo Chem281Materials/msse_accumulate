@@ -12,7 +12,7 @@ This can be a problem when trying to track down bugs that only occur upon rare o
 One possible solution, under certain circumstances, is to switch from doing floating-point math to doing integer math.
 To understand how this works, suppose you have a double precision value of `1.041872619831`.
 If you multiply this double precision value by a large number, you can represent part of the mantissa as an integer.
-For example, if you multiply by `10000`, you can approximately store it as the integer `10419`.
+For example, if you multiply by `10000`, you can approximately store the entire value as the integer `10419`.
 To convert back to a double precision value, just divide by the same large number; in our example, this will give a result of approximately `1.0419`, which means that we have obviously lost a certain amount of precision.
 Nonetheless, if we do math exclusively with integer representations of floating point numbers, we don't need to worry about the nuances of floating precision math (including the non-associativity issue).
 A possible strategy is therefore to convert floating point values to an integer type, do math with them, and then convert them back to floating point representations.
