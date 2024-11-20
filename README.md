@@ -49,6 +49,7 @@ For example,
     // Do stuff that assumes "T" is "int"
     ...
   }
+```
 
 Note that temporary variables (from intermediate calculation steps) can cause you problems during this problem.
 For example, the following two are **not** the same:
