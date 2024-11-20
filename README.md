@@ -26,7 +26,7 @@ For example, Tinker9 is a molecular dynamics code that provides users the option
 In `src/main.cpp`, you will find a code that initializes a large vector with random, double precision values between `0.0` and `1.0`.
 It then calls a template function called `accumulate` several times with different types (specifically, `float`, `double`, `int`, and `long`).
 Your task is to add code to the `accumulate` function so that it accumulates (that is, sums) all the values in this vector.
-Your `accumulate` function must do this twice: the first time, by adding the vector's values from the first index to the last index, and the second time, by adding the vector's values from the last index to the first index.
+Your `accumulate` function must do this twice: the first time, by adding the vector's values in order from the first index to the last index, and the second time, by adding the vector's values in order from the last index to the first index.
 **Print both sums, as well as the difference between the two sums.**
 
 The template function's type `T` indicates what type should be used to represent the intermediate values of the sum as it is being computed.
