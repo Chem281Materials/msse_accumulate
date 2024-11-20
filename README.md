@@ -34,7 +34,7 @@ When the type is `int` or `long`, you will need to perform conversions similar t
 Try to maximize the precision of your `int`/`long` representation.
 This means multiplying by a very large value, but also avoiding any integer overflows (you'll want to use [std::numeric_limits](https://en.cppreference.com/w/cpp/types/numeric_limits) to help with this).
 Regardless of the type `T`, convert your sum to a `double` after all the values have been added.
-If you do this correctly, you should find that the `int`/`long` representations produce the same result, regardless of the order of the summation.
+If you do this correctly, you should find that the `int`/`long` representations produce results that are not sensitive to the order in which the sum is carried out.
 
 Write a brief summary of your observations.
 Also write a brief explanation of the limitations of this method - why doesn't it make sense to always use integer representations instead of floating point representations?
