@@ -36,8 +36,8 @@ This means multiplying by a very large value, but also avoiding any integer over
 Regardless of the type `T`, convert your sum to a `double` after all the values have been added.
 If you do this correctly, you should find that the `int`/`long` representations produce results that are not sensitive to the order in which the sum is carried out.
 
-Write a brief summary of your observations.
-Also write a brief explanation of the limitations of this method - why doesn't it make sense to always use integer representations instead of floating point representations?
+Write a brief summary of your observations, and provide a brief explanation of the limitations of this method - why doesn't it make sense to always use integer representations instead of floating point representations?
+Also, explain how you converted from the floating precision representation to the integer / long integer representations - in particular, when multiplying the floating precision value by a large value to get the integer / long integer representation, how did you select the size of the large value?
 
 ## Hints
 
