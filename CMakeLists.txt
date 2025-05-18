@@ -7,7 +7,7 @@ project(Accumulate VERSION 1.0
 
 # Specify the C++ standard
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRTRUE)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 # Add the executable
 add_executable(accumulate src/main.cpp)
